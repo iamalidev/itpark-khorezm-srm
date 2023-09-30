@@ -50,8 +50,34 @@ $maxWidthContainer: 1440;
   height: ($width/1.60) + px;
 }
 
+@mixin alignCenter {
+  display: flex;
+  align-items: center;
+}
+
+@mixin justifyCenter {
+  display: flex;
+  justify-content: center;
+}
+
 @mixin center {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@mixin spaceBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flexBetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flexColumn {
+  display: flex;
+  flex-direction: column;
 }

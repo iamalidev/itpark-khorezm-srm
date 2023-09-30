@@ -1,0 +1,75 @@
+.menu {
+  position: relative;
+  width: 250px;
+  height: 100vh;
+  padding-block: 15px;
+  background-color: $white;
+  border-right: 1px solid rgba(0, 0, 0, 0.03);
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.03);
+  }
+
+  &__top {
+    @include justifyCenter;
+    width: 100%;
+    padding-bottom: 15px;
+    margin-bottom: 13px;
+  }
+
+  &__list {
+    @include flexColumn;
+    transition: 0.08s;
+
+    // a.active {
+    //   background-color: transparent;
+
+    //   svg {
+    //     path {
+    //       fill: $blue;
+    //     }
+    //   }
+
+    //   rect {
+    //     fill: $blue;
+    //   }
+    // }
+
+    &:hover {
+      svg {
+        path {
+          fill: $blue;
+        }
+      }
+
+      rect {
+        fill: $blue;
+      }
+    }
+  }
+
+  &__link {
+    @include alignCenter;
+    gap: 10px;
+    padding: 10px 30px;
+    font-family: "Mulish";
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: $dark;
+    transition: 0.08s;
+
+    &:hover {
+      color: $blue;
+    }
+
+    // &.active {
+    //   color: $blue;
+    // }
+  }
+}
