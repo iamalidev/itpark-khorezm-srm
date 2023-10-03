@@ -1,0 +1,31 @@
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 15px 30px;
+  background-color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &-infobar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    &__item {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 3px;
+      transition: 0.2s;
+      position: relative;
+
+      &:hover {
+        background-color: rgba(129, 167, 205, 0.1);
+      }
+    }
+  }
+}

@@ -1,2 +1,15 @@
 export { default as Logo } from "./logo";
 export { default as HomeIcon } from "./dashboardIcon";
+export { default as MenIcon } from "./menIcon";
+export { default as NotificationsIcon } from "./notificationsIcon";
+export { default as SettingsIcon } from "./settingsIcon";
+export { default as UsIcon } from "./usIcon";
+export { default as UzIcon } from "./uzIcon";
+export { default as RuIcon } from "./ruIcon";
+export { default as BlueDollarIcon } from "./blueDollarIcon";
+export { default as EmailIcon } from "./emailIcon";
+export { default as GreenPaperIcon } from "./greenPaperIcon";
+export { default as LogOutIcon } from "./logOutIcon";
+export { default as RedEyeIcon } from "./redEyeIcon";
+export { default as UserIcon } from "./userIcon";
+export { default as YellowBoxIcon } from "./yellowBoxIcon";
