@@ -15,11 +15,6 @@ const HomeIcon = (props) => (
     xmlSpace="preserve"
     {...props}
   >
-    <style type="text/css">
-      {
-        "\r\n\t.st0{opacity:0.5;fill:#717C99;enable-background:new    ;}\r\n\t.st1{fill:#717C99;}\r\n"
-      }
-    </style>
     <g id="dashboard">
       <path
         className="st0"

@@ -1,0 +1,22 @@
+.header {
+  @include spaceBetween;
+  position: sticky;
+  top: 0;
+  padding: 15px 30px;
+  background-color: $white;
+
+  &-infobar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &__item {
+      transition: 0.2s;
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgba(129, 167, 205, 0.1);
+      }
+    }
+  }
+}

@@ -1,11 +1,13 @@
-import React from "react";
-import Header from "./header";
+// import React from "react";
+import { Route, Routes } from "react-router-dom";
+// import { useState } from "react";
+import { routes } from "@/constants/routes";
+// import LoginPage from "@/pages/login";
+import Header from "./header/header";
 import Menu from "./menu";
-// import { Route, Routes } from "react-router-dom";
-// import clsx from "clsx";
-// import { routes } from "../constants/routes";
 
 const Root = () => {
+
   return (
     <div className="wrapper">
       <div>
@@ -13,23 +15,18 @@ const Root = () => {
       </div>
       <div className="wrapper__content">
         <Header />
-        {/* <div className="wrapper-content_inside">
+        <div className="wrapper__inside">
           <div className="container">
             <Routes>
               {routes.map((el) => (
-                <Route
-                  key={el.path}
-                  path={el.path}
-                  element={el.components}
-                  //   className={clsx(`${!el.visible && "hidden"}`)}
-                />
+                <Route key={el.path} path={el.path} element={el.components} />
               ))}
             </Routes>
           </div>
-        </div> */}
+        </div>
       </div>
     </div>
-  );
+  )
 };
 
 export default Root;
