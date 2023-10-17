@@ -1,0 +1,32 @@
+.accordion__wrapper {
+  max-width: 790px;
+  width: 100%;
+  background-color: white;
+  padding: 24px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.accordion__title {
+  color: $blue;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.accordion__actions {
+  display: flex;
+  gap: 8px;
+}
+
+.ant-collapse {
+  &-content-box {
+    background-color: #efefef;
+  }
+}
+
+.accordion__inner {
+  border-left: 2px solid #aaa;
+  padding-left: 10px;
+}

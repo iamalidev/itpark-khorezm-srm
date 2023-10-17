@@ -1,5 +1,8 @@
 import { useState } from "react";
 import Search from "antd/es/input/Search";
+import NoticeModal from "./noticeModal";
+import FlagsModal from "./flagsModal";
+import ProfileModal from "./profileModal";
 import {
   MenIcon,
   NotificationsIcon,
@@ -11,39 +14,6 @@ import Modal from "./modal";
 const onSearch = (value, _e, info) => console.log(info?.source, value);
 
 const Header = () => {
-  const [one, setOne] = useState("none");
-  const [two, setTwo] = useState("none");
-  const [three, setThree] = useState("none");
-  const [finder, setFinder] = useState(0);
-
-  const allClose = () => {
-    setOne("none");
-    setTwo("none");
-    setThree("none");
-    setFinder(0);
-  };
-
-  const oneOpen = () => {
-    setOne("flex");
-    setTwo("none");
-    setThree("none");
-    setFinder(1);
-  };
-
-  const twoOpen = () => {
-    setOne("none");
-    setTwo("flex");
-    setThree("none");
-    setFinder(2);
-  };
-
-  const threeOpen = () => {
-    setOne("none");
-    setTwo("none");
-    setThree("flex");
-    setFinder(3);
-  };
-
   return (
     <div className="header">
       <Search
@@ -56,23 +26,20 @@ const Header = () => {
       />
 
       <ul className="header-infobar">
-        <li className="header-infobar__item" >
+        <li className="header-infobar__item">
           <SettingsIcon />
         </li>
 
-        <li className="header-infobar__item" onClick={oneOpen}>
-          <NotificationsIcon />
-          <Modal condition={one} allClose={allClose} finder={finder} />
+        <li className="header-infobar__item">
+          <NoticeModal />
         </li>
 
-        <li className="header-infobar__item" onClick={twoOpen}>
-          <UsIcon />
-          <Modal condition={two} allClose={allClose} finder={finder} />
+        <li className="header-infobar__item">
+          <FlagsModal />
         </li>
 
-        <li className="header-infobar__item" onClick={threeOpen}>
-          <MenIcon />
-          <Modal condition={three} allClose={allClose} finder={finder} />
+        <li className="header-infobar__item">
+          <ProfileModal />
         </li>
       </ul>
     </div>

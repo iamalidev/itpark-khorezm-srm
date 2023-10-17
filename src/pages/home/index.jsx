@@ -1,7 +1,10 @@
-import React from "react";
+import CourseAccord from "../../components/courseAccord";
 
 const HomePage = () => {
-  return <div>HomePage</div>;
+  return <div className="accordion__wrapper">
+    <p className="accordion__title">Kompyuter Savodhonligi</p>
+    <CourseAccord />
+  </div>;
 };
 
 export default HomePage;
