@@ -1,10 +1,15 @@
+import { useState } from "react";
 import Search from "antd/es/input/Search";
-import {
-  SettingsIcon,
-} from "@/assets/icons";
 import NoticeModal from "./noticeModal";
 import FlagsModal from "./flagsModal";
 import ProfileModal from "./profileModal";
+import {
+  MenIcon,
+  NotificationsIcon,
+  SettingsIcon,
+  UsIcon,
+} from "@/assets/icons";
+import Modal from "./modal";
 
 const onSearch = (value, _e, info) => console.log(info?.source, value);
 

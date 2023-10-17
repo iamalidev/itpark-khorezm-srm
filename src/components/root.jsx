@@ -1,13 +1,10 @@
-// import React from "react";
+import React from "react";
 import { Route, Routes } from "react-router-dom";
-// import { useState } from "react";
 import { routes } from "@/constants/routes";
-// import LoginPage from "@/pages/login";
 import Header from "./header/header";
 import Menu from "./menu";
 
 const Root = () => {
-
   return (
     <div className="wrapper">
       <div>
