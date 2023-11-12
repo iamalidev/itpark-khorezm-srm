@@ -1,6 +1,7 @@
 import CalendarPage from "@/pages/calendar";
 import CoursesPage from "@/pages/courses";
 import HomePage from "@/pages/home";
+import MyAccount from "@/pages/myAccount";
 
 export const routes = [
   {
@@ -17,5 +18,10 @@ export const routes = [
     id: 2,
     components: <CalendarPage />,
     path: "/calendar",
+  },
+  {
+    id: 3,
+    components: <MyAccount />,
+    path: "/my-account",
   },
 ];

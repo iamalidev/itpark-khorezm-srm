@@ -1,4 +1,4 @@
-import { HomeIcon } from "@/assets/icons";
+import { HomeIcon, UserIcon } from "@/assets/icons";
 
 export const menuData = [
   {
@@ -18,5 +18,11 @@ export const menuData = [
     icon: <HomeIcon />,
     label: "Calendar",
     path: "/calendar",
+  },
+  {
+    id: 3,
+    icon: <HomeIcon />,
+    label: "My Account",
+    path: "/my-account",
   },
 ];

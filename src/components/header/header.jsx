@@ -5,7 +5,6 @@ import FlagsModal from "./flagsModal";
 import ProfileModal from "./profileModal";
 import {
   MenIcon,
-  NotificationsIcon,
   SettingsIcon,
   UsIcon,
 } from "@/assets/icons";

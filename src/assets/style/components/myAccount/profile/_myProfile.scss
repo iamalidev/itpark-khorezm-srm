@@ -1,0 +1,151 @@
+.profile {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+
+  .edit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+
+    &__box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      gap: 14px;
+
+      &-icon {
+        padding: 8px 12px;
+        background-color: #e7faf0;
+        border-radius: 4px;
+        transition: 0.1s;
+      }
+      &-delete {
+        padding: 8px 12px;
+        background-color: #ffebeb;
+        border-radius: 4px;
+        transition: 0.1s;
+      }
+
+      &-delete:hover {
+        background-color: #ff3f3f;
+        svg {
+          path {
+            stroke: #fff;
+            -webkit-text-stroke-color: #ff3f3f;
+            fill: #ff3f3f;
+          }
+        }
+      }
+      &-icon:hover {
+        background-color: #18d26b;
+        svg {
+          path {
+            stroke: #fff;
+            fill: #18d26b;
+          }
+        }
+      }
+    }
+  }
+
+  .form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+
+    &__title {
+      font-size: 16px;
+      font-weight: 600;
+      color: #263a5b;
+      margin-bottom: 15px;
+    }
+
+    &__box {
+      display: flex;
+      gap: 10px;
+    }
+
+    &__group {
+      gap: 1rem;
+      display: flex;
+      flex-direction: column;
+
+      &-input {
+        display: flex;
+        flex-direction: column;
+        max-width: max-content;
+        font-size: 15px;
+        font-weight: 400;
+        color: #8a98ac;
+        line-height: 1.5;
+        gap: 0.5rem;
+      }
+
+      &-form {
+        width: 370px;
+        border: 1px solid rgba(0, 0, 0, 0.03);
+        height: calc(1.5em + 0.75rem + 2px);
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+      }
+
+      &-form:focus {
+        border: 3px solid #0080ff !important;
+      }
+    }
+
+    &__radio {
+      display: flex;
+      align-items: center;
+      margin-top: 1rem;
+
+      &-input {
+        font-size: 15px;
+        font-weight: 400;
+        color: #8a98ac;
+        line-height: 1.5;
+        display: flex;
+        gap: 5px;
+        margin-right: 1rem;
+        align-items: center;
+      }
+    }
+
+    &__button {
+      display: flex;
+      gap: 5px;
+      margin-top: 10px;
+      max-width: max-content;
+      display: flex;
+      align-items: start;
+      background-color: rgba(0, 128, 255, 0.1);
+      border: none;
+      color: #0080ff;
+      border-radius: 3px;
+      font-size: 14px;
+      line-height: 1.5;
+      padding: 6px 12px;
+    }
+
+    &__button:hover {
+      background-color: #0080ff;
+      color: #fff;
+      transition: .5s;
+
+      svg {
+        path {
+          fill: #0080ff;
+          stroke: #fff;
+        }
+      }
+    }
+  }
+}

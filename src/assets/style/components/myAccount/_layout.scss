@@ -1,0 +1,92 @@
+.tabs {
+  margin: 30px;
+  display: flex;
+}
+
+:where(.css-dev-only-do-not-override-pr0fja).ant-tabs >.ant-tabs-nav, :where(.css-dev-only-do-not-override-pr0fja).ant-tabs >div>.ant-tabs-nav {
+  position: relative;
+  display: flex;
+  flex: none;
+  height: max-content;
+}
+.ant-tabs-ink-bar,
+.ant-tabs-ink-bar-animated {
+  background-color: #0080ff;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 0.25rem;
+}
+
+.ant-tabs-left > .ant-tabs-content-holder {
+  border-left: none;
+  margin-left: 30px;
+  width: 100%;
+  min-height: 240px;
+}
+.ant-tabs-left > .ant-tabs-nav .ant-tabs-ink-bar {
+  width: 173px;
+}
+
+:where(.css-dev-only-do-not-override-pr0fja).ant-tabs
+  .ant-tabs-tab.ant-tabs-tab-active
+  .ant-tabs-tab-btn {
+  color: #fff;
+}
+
+.ant-tabs-left > .ant-tabs-nav .ant-tabs-ink-bar {
+  width: 173px;
+}
+
+:where(.css-dev-only-do-not-override-pr0fja).ant-tabs-left
+  > .ant-tabs-nav
+  .ant-tabs-tab,
+:where(.css-dev-only-do-not-override-pr0fja).ant-tabs-right
+  > .ant-tabs-nav
+  .ant-tabs-tab,
+:where(.css-dev-only-do-not-override-pr0fja).ant-tabs-left
+  > div
+  > .ant-tabs-nav
+  .ant-tabs-tab,
+:where(.css-dev-only-do-not-override-pr0fja).ant-tabs-right
+  > div
+  > .ant-tabs-nav
+  .ant-tabs-tab {
+  padding: 0;
+}
+
+.tab-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: start;
+  padding: 8px 0px 8px 8px;
+}
+
+.ant-tabs-ink-bar,
+.ant-tabs-ink-bar-animated {
+  right: 0;
+}
+
+:where(.css-dev-only-do-not-override-pr0fja).ant-tabs
+  > .ant-tabs-nav
+  .ant-tabs-nav-wrap,
+:where(.css-dev-only-do-not-override-pr0fja).ant-tabs
+  > div
+  > .ant-tabs-nav
+  .ant-tabs-nav-wrap {
+  position: relative;
+  display: flex;
+  flex: auto;
+  align-self: stretch;
+  white-space: nowrap;
+  overflow: visible;
+  transform: translate(0);
+  background-color: #fff;
+  width: 213px;
+  padding: 20px;
+}
+
+.ant-tabs-left >.ant-tabs-content-holder >.ant-tabs-content>.ant-tabs-tabpane {
+  padding-left: 0;
+}
