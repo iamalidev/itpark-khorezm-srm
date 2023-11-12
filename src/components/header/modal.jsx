@@ -91,7 +91,13 @@ function Modal({ condition, allClose, finder }) {
             <EmailIcon />
             <p className="modal-menu__item-text">Email</p>
           </li>
-          <li className="modal-menu__item">
+          <li
+            className="modal-menu__item"
+            onClick={() => {
+              localStorage.clear();
+              location.reload();
+            }}
+          >
             <LogOutIcon />
             <p className="modal-menu__item-text">Log out</p>
           </li>
@@ -101,7 +107,11 @@ function Modal({ condition, allClose, finder }) {
   }, [finder]);
 
   return (
-    <div className="modal" onMouseLeave={allClose} style={{ display: `${condition}` }}>
+    <div
+      className="modal"
+      onMouseLeave={allClose}
+      style={{ display: `${condition}` }}
+    >
       {modalData}
     </div>
   );

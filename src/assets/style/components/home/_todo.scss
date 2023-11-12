@@ -1,0 +1,120 @@
+.todo {
+  @include flexColumn;
+  row-gap: 30px;
+  max-width: 470px;
+  padding: 20px;
+  background-color: $white;
+  border-radius: 3px;
+
+  &__top {
+    @include alignCenter;
+    gap: 10px;
+  }
+
+  &__bottom {
+    @include flexColumn;
+    row-gap: 30px;
+  }
+
+  &__notdone {
+    @include flexColumn;
+    row-gap: 15px;
+
+    &-box {
+      @include flexBetween;
+      align-items: flex-start;
+      padding: 15px;
+      gap: 15px;
+      background-color: $lightBlue;
+      border-radius: 3px;
+      color: $blue;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: normal;
+      text-align: justify;
+    }
+  }
+
+  &__done {
+    @include flexColumn;
+    row-gap: 15px;
+
+    &-box {
+      @include flexBetween;
+      align-items: flex-start;
+      padding: 15px;
+      gap: 15px;
+      background-color: #ededed;
+      border-radius: 3px;
+      color: #949494;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: normal;
+      text-decoration: line-through;
+      text-align: justify;
+    }
+  }
+
+  &__actions {
+    @include center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  &__input {
+    padding: 9px 18px;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: normal;
+    color: $dark;
+
+    &::placeholder {
+      color: #d9d9d9;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  &__btn {
+    @include center;
+    height: 100%;
+    padding: 11px 15px;
+    background-color: $lightBlue;
+    border-radius: 3px;
+    border: none;
+    color: $blue;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+:where(.css-dev-only-do-not-override-pr0fja).ant-input-affix-wrapper
+  .ant-input-suffix {
+  margin-inline-start: 9px;
+}
+
+.App {
+  text-align: center;
+  margin: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+Input {
+  width: 300px;
+  margin-right: 1rem;
+}
+
+List {
+  margin-top: 1rem;
+}
+
+Button {
+  margin-right: 0.5rem;
+}

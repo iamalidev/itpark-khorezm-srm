@@ -47,16 +47,14 @@ const Header = () => {
   return (
     <div className="header">
       <Search
-        placeholder="input search text"
+        className="header__search"
+        placeholder="Search"
         allowClear
         onSearch={onSearch}
-        style={{
-          width: 200,
-        }}
       />
 
       <ul className="header-infobar">
-        <li className="header-infobar__item" >
+        <li className="header-infobar__item">
           <SettingsIcon />
         </li>
 

@@ -13,3 +13,6 @@ export { default as LogOutIcon } from "./logOutIcon";
 export { default as RedEyeIcon } from "./redEyeIcon";
 export { default as UserIcon } from "./userIcon";
 export { default as YellowBoxIcon } from "./yellowBoxIcon";
+export { default as PenIcon } from "./penIcon.jsx";
+export { default as CheckIcon } from "./checkIcon";
+export { default as TrashIcon } from "./trashIcon.jsx";

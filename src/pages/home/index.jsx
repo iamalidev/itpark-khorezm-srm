@@ -1,7 +1,8 @@
 import React from "react";
+import Todo from "./components/todo";
 
 const HomePage = () => {
-  return <div>HomePage</div>;
+  return <Todo />;
 };
 
 export default HomePage;
