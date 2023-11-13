@@ -1,5 +1,6 @@
 .menu {
-  position: relative;
+  position: sticky;
+  top: 0;
   width: 250px;
   height: 100vh;
   padding-block: 15px;
@@ -40,17 +41,17 @@
     //   }
     // }
 
-    &:hover {
-      svg {
-        path {
-          fill: $blue;
-        }
-      }
+    // &:hover {
+    //   svg {
+    //     path {
+    //       fill: $blue;
+    //     }
+    //   }
 
-      rect {
-        fill: $blue;
-      }
-    }
+    //   rect {
+    //     fill: $blue;
+    //   }
+    // }
   }
 
   &__link {

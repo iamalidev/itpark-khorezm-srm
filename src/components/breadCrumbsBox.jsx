@@ -13,6 +13,15 @@ const BreadCrumbsBox = () => {
       case "/":
         setTitle("Dashboard");
         break;
+      case "/courses":
+        setTitle("Courses");
+        break;
+      case "/calendar":
+        setTitle("Calendar");
+        break;
+      case "/my-account":
+        setTitle("Profile");
+        break;
     }
   }, [location.pathname]);
 
@@ -25,14 +34,15 @@ const BreadCrumbsBox = () => {
         items={[
           {
             title: "Home",
+            href: "/",
           },
           {
             title: "Courses",
             href: "",
           },
-          {
-            title: "Calendar",
-          },
+          // {
+          //   title: "Calendar",
+          // },
         ]}
       />
     </div>
