@@ -8,6 +8,9 @@
 @import "./components/header/modal";
 @import "./components/login";
 @import "./components/courses/table";
+@import "./components/footer";
+@import "./components/bread-crumbs-box";
+@import "./components/home/todo";
 @import "./components/calendar/big-calendar";
 @import "./components/accordion";
 @import "./components/myAccount/layout";
@@ -15,5 +18,6 @@
 @import "./components/myAccount/profile/logout";
 @import "./components/myAccount/profile/myProfile";
 @import "./components/myAccount/profile/natifications";
-@import "./components/home/components/infoCard";
+@import "./components/home/infoCard";
+@import "./components/home/home";
 @import "./generals/generals";

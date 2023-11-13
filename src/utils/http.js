@@ -1,5 +1,5 @@
 import axios from "axios";
-// import { getLocalStorage } from "./helpers";
+import { getLocalStorage } from "./helpers";
 
 export const $authHost = axios.create({
   baseURL: `https://api.it-khorezm.uz/api/v1/`,

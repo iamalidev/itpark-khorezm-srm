@@ -2,6 +2,7 @@ import { Button } from "antd";
 import EditableTable from "./components/editableTable";
 import { useState } from "react";
 import TableModal from "./components/tableModal";
+import CourseAccordion from "./components/courseAccordion";
 
 function CoursesPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -38,20 +39,16 @@ function CoursesPage() {
   };
 
   return (
-    <div className="table__wrapper">
-      <Button type="primary" onClick={showModal} className="add__btn">
-        Add
-      </Button>
-      <TableModal
-        setIsModalOpen={setIsModalOpen}
-        isModalOpen={isModalOpen}
-      />
-      <EditableTable
-        showModal={showModal}
-        data={data}
-        setData={setData}
-      />
-    </div>
+    <>
+      <div className="table__wrapper">
+        <Button type="primary" onClick={showModal} className="add__btn">
+          Add
+        </Button>
+        <TableModal setIsModalOpen={setIsModalOpen} isModalOpen={isModalOpen} />
+        <EditableTable showModal={showModal} data={data} setData={setData} />
+      </div>
+      <CourseAccordion />
+    </>
   );
 }
 

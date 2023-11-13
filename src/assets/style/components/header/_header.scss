@@ -2,8 +2,50 @@
   @include spaceBetween;
   position: sticky;
   top: 0;
+  z-index: 10;
+  width: 100%;
   padding: 15px 30px;
   background-color: $white;
+  border-bottom: $border;
+
+  &__search {
+    width: 220px;
+  }
+
+  &__actions {
+    display: flex;
+
+    .hover {
+      padding: 10px;
+    }
+  }
+
+  .ant-input-search
+    :where(.css-dev-only-do-not-override-pr0fja).ant-input-group
+    .ant-input-affix-wrapper:not(:last-child) {
+    padding: 6px 12px 6px 20px;
+  }
+
+  :where(.css-dev-only-do-not-override-pr0fja)[class^="ant-input"]
+    [class^="ant-input"],
+  :where(.css-dev-only-do-not-override-pr0fja)[class*=" ant-input"]
+    [class^="ant-input"],
+  :where(.css-dev-only-do-not-override-pr0fja)[class^="ant-input"]
+    [class*=" ant-input"],
+  :where(.css-dev-only-do-not-override-pr0fja)[class*=" ant-input"]
+    [class*=" ant-input"] {
+    background-color: #f2f6fa;
+    border-radius: 3px;
+    border: none;
+    font-size: 15.5px;
+  }
+
+  .ant-input::placeholder {
+    font-family: "Mulish";
+    font-size: 16px;
+    font-weight: 400;
+    color: #717c99;
+  }
 
   &-infobar {
     display: flex;

@@ -1,10 +1,10 @@
-import { Logo } from "@/assets/icons";
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+import { Button, Checkbox, Form, Input, message, Spin } from "antd";
 import { UserContext } from "@/context/userContext";
 import { usePostRequest } from "@/hooks/request";
 import { loginUrl } from "@/utils/urls";
-import { Button, Checkbox, Form, Input, message } from "antd";
-import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Logo } from "@/assets/icons";
 
 const LoginPage = () => {
   const loginRequest = usePostRequest({ url: loginUrl });
@@ -47,7 +47,7 @@ const LoginPage = () => {
           >
             <Form.Item
               name="login"
-              // autoComplete="off"
+              autoComplete="off"
               rules={[
                 {
                   required: true,

@@ -5,7 +5,7 @@ import Notifications from "./profile/notifications";
 import MyProfile from "./profile/myProfile";
 import Logout from "./profile/logout";
 import { BellIcon, GridIcon, UserIcon } from "@/assets/icons";
-import ProfileLogoutIcon from "@/assets/icons/profileLogoutIcon copy";
+import ProfileLogoutIcon from "@/assets/icons/profileLogoutIcon";
 
 const App = () => {
   const [tabPosition, setTabPosition] = useState("left");

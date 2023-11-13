@@ -3,6 +3,8 @@ import { Route, Routes } from "react-router-dom";
 import { routes } from "@/constants/routes";
 import Header from "./header/header";
 import Menu from "./menu";
+import Footer from "./footer";
+import BreadCrumbsBox from "./breadCrumbsBox";
 
 const Root = () => {
   return (
@@ -14,12 +16,14 @@ const Root = () => {
         <Header />
         <div className="wrapper__inside">
           <div className="container">
+            <BreadCrumbsBox />
             <Routes>
               {routes.map((el) => (
                 <Route key={el.path} path={el.path} element={el.components} />
               ))}
             </Routes>
           </div>
+          <Footer />
         </div>
       </div>
     </div>

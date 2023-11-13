@@ -76,7 +76,7 @@ const CourseAccord = () => {
             <CircleArrowIcon style={{ transform: "rotateZ(180deg)" }} />
           )
         }
-        defaultActiveKey={["1"]}
+        defaultActiveKey={["0"]}
         onChange={onChange}
         items={items}
       />

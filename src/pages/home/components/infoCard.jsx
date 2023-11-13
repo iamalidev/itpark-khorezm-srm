@@ -3,7 +3,7 @@ import React from "react";
 
 const InfoCard = () => {
   return (
-    <React.Fragment>
+    <div className="info__cards">
       {infoCard.map((el) => {
         return (
           <div className="card" key={el.id}>
@@ -32,7 +32,7 @@ const InfoCard = () => {
           </div>
         );
       })}
-    </React.Fragment>
+    </div>
   );
 };
 

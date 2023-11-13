@@ -1,14 +1,12 @@
-import CourseAccord from "../../components/courseAccord";
+import React from "react";
 import InfoCard from "./components/infoCard";
+import Todo from "./components/todo";
 
 const HomePage = () => {
   return (
     <div className="home">
-      <div className="accordion__wrapper">
-        <p className="accordion__title">Kompyuter Savodhonligi</p>
-        <CourseAccord />
-      </div>
-        <InfoCard />
+      <InfoCard />
+      <Todo />
     </div>
   );
 };
