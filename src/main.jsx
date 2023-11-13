@@ -1,4 +1,3 @@
-import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import UserProvider from "./context/userContext";
@@ -8,6 +7,8 @@ import Root from "./components/root";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
-    <Root />
+    <UserProvider>
+      <Root/>
+    </UserProvider>
   </BrowserRouter>
 );

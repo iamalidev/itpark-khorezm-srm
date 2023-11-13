@@ -1,4 +1,4 @@
-import { HomeIcon } from "@/assets/icons";
+import { HomeIcon, UserIcon } from "@/assets/icons";
 
 export const menuData = [
   {
