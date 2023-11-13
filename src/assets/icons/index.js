@@ -1,7 +1,7 @@
 export { default as Logo } from "./logo";
 export { default as HomeIcon } from "./dashboardIcon";
 export { default as MenIcon } from "./menIcon";
-export { default as NotificationIcon } from "./notificationIcon";
+export { default as NotificationsIcon } from "./notificationsIcon";
 export { default as SettingsIcon } from "./settingsIcon";
 export { default as UsIcon } from "./usIcon";
 export { default as UzIcon } from "./uzIcon";
